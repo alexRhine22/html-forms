@@ -1,0 +1,83 @@
+:root {
+  --black: #000;
+  --blue: #0077c5;
+  --light-grey: #eceef1;
+  --light-light-grey: #eceef1;
+  --white: #fff;
+}
+
+/**
+*
+* globals
+* 
+*/
+body {
+  background: var(--light-grey);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/**
+*
+* helpers
+* 
+*/
+.text-center {
+  text-align: center;
+}
+
+/**
+*
+* font sizes
+* 
+*/
+.text--xs {
+  font-size: 10;
+}
+.text--sm {
+  font-size: 12px;
+}
+.text--md {
+  font-size: 14px;
+}
+.text--lg {
+  font-size: 14px;
+}
+.text--xl {
+  font-size: 18px;
+}
+
+.title--md {
+  font-size: 24px;
+}
+
+/**
+*
+* create account box
+* 
+*/
+.create-account-box {
+  background-color: var(--white);
+  max-width: 380px;
+}
+
+/**
+*
+* footer
+* 
+*/
+.footer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 708px;
+}
+.footer__nav {
+  margin: 0 auto;
+}
+.footer__list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  color: var(--black);
+}
