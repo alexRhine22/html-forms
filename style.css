@@ -13,7 +13,7 @@
 */
 body {
   background: var(--light-grey);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial";
   margin: 0;
 }
 
@@ -25,6 +25,12 @@ body {
 .text-center {
   text-align: center;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
 
 /**
 *
@@ -32,16 +38,18 @@ body {
 * 
 */
 .text--xs {
-  font-size: 10;
+  font-size: 10px;
 }
 .text--sm {
   font-size: 12px;
+  line-height: 18px;
 }
 .text--md {
   font-size: 14px;
+  line-height: 25px;
 }
 .text--lg {
-  font-size: 14px;
+  font-size: 15.75px;
 }
 .text--xl {
   font-size: 18px;
@@ -49,6 +57,8 @@ body {
 
 .title--md {
   font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 /**
@@ -56,9 +66,76 @@ body {
 * create account box
 * 
 */
-.create-account-box {
+.create-account {
   background-color: var(--white);
-  max-width: 380px;
+  max-width: 320px;
+  margin: 0 auto;
+  border: 1px solid #c7c7c7;
+  padding: 30px;
+}
+.create-account__header {
+  padding-bottom: 20px
+}
+.create-account__title,
+.create-account__description {
+  margin: 0;
+}
+.create-account__description {
+  color: #4C4C4C;;
+  padding-top: 20px;
+}
+.create-account__link {
+  color: #0077C5;
+  text-decoration: none;
+}
+.create-account__input-title {
+  display: block;
+  color: #404040;
+  float: left;
+  padding-bottom: 6px;
+}
+.create-account__input {
+  font-size: 1.2em;
+  padding-left: 8px;
+  min-width: 160px;
+  padding-right: 6px;
+  border: 1px solid #c1c5c8;
+  height: 34px;
+  width: 302px;
+  border-radius: 3px;
+  color: var(--black);
+}
+.create-account__input:focus {
+  border: 1px solid #52A8EC;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.create-account__button-container {
+  padding-bottom: 30px;
+}
+.create-account__button {
+  border: none;
+  color: var(--white);
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  background: linear-gradient(to bottom, #167CCC 0%, #0077C5 100%);;
+}
+.create-account__button:hover {
+  cursor: pointer;
+}
+.create-account__footer {
+  background-color: #ECEEF1;
+  padding: 16px; 
+  color: #8d9096;
+  margin: 32px -30px -30px -30px;
+}
+.create-account__terms {
+  color: #757575;
+}
+.create-account__hidden-text {
+  display: block;
+  min-height: 20px;
 }
 
 /**
@@ -71,13 +148,33 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 708px;
+  padding: 20px 0;
 }
 .footer__nav {
   margin: 0 auto;
 }
 .footer__list {
   display: flex;
-  padding: 0;
+  justify-content: center;
   list-style-type: none;
-  color: var(--black);
+  margin: 0;
+  padding: 0;
+}
+.footer__list-item {
+  padding-left: 10px;
+}
+.footer__list-item:nth-of-type(1) {
+  padding-left: 0;
+}
+.footer__nav-link {
+  color: #505050;
+  text-decoration: none;
+}
+.footer__nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer__legal {
+  color: #505050;
+  margin: 0;
 }

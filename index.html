@@ -3,25 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css" />
     <title>Intuit Accounts - Sign Up | Clone</title>
   </head>
   <body>
-    <main>
-      <form></form>
+    <header></header>
+
+    <main class="create-account text-center">
+      <div class="create-account__header">
+        <h1 class="create-account__title title--md">
+          Create an Intuit account
+        </h1>
+        <p class="create-account__description text--md">
+          One account for everything Intuit, including Mint.
+        </p>
+        <a class="create-account__link text--sm" href="#none">Learn more</a>
+      </div>
+
+      <form>
+        <label class="create-account__input-title text--md" for="email">
+          Email address
+        </label>
+        <input
+          class="create-account__input"
+          type="email"
+          name="email"
+          title="You'll use this as your user ID"
+        />
+
+        <span class="create-account__hidden-text"></span>
+
+        <label class="create-account__input-title text--md" for="phone">
+          Phone (recommended)
+        </label>
+        <input class="create-account__input" type="phone" name="phone" />
+
+        <span class="create-account__hidden-text"></span>
+
+        <label class="create-account__input-title text--md" for="password">
+          Password
+        </label>
+        <input class="create-account__input" type="text" name="password" />
+
+        <span class="create-account__hidden-text"></span>
+
+        <div class="create-account__button-container text--lg">
+          <button class="create-account__button" type="submit">
+            Create Account
+          </button>
+        </div>
+      </form>
+
+      <div class="create-account__terms">
+        <p class="text--sm">
+          <i>
+            By clicking Create account, you agree to our
+            <a class="create-account__link" href="#none">Terms</a>
+            and have read and acknowledge our
+            <a class="create-account__link" href="#none">Privacy Statement</a>
+            .
+          </i>
+        </p>
+      </div>
+
+      <div class="create-account__footer">
+        <p class="text--xs">
+          Invisible reCAPTCHA by
+          <a class="create-account__link" href="#none">Google Privacy Policy</a>
+          and
+          <a class="create-account__link" href="#none">Terms of Use</a>
+        </p>
+      </div>
     </main>
 
     <footer class="footer text-center">
       <nav class="footer__nav">
-        <ul class="footer__list text--sm">
-          <li><a href="#none">Legal</a></li>
-          <li><a href="#none">Privacy</a></li>
-          <li><a href="#none">Security</a></li>
+        <ul class="footer__list text--sm text-capitalize">
+          <li class="footer__list-item">
+            <a class="footer__nav-link" href="#none">Legal</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__nav-link" href="#none">Privacy</a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__nav-link" href="#none">Security</a>
+          </li>
         </ul>
       </nav>
 
-      <p class="text--sm">
-        <small>
+      <p class="footer__legal">
+        <small class="text--sm">
           © 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
           TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
           Terms and conditions, features, support, pricing, and service options
