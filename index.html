@@ -2,104 +2,204 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Intuit Accounts - Sign Up | Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <div id="svg-sprite" class="hidden">
+      <svg width="0" height="0" class="hidden">
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="turbo-tax"
+          x="0px"
+          y="0px"
+          xml:space="preserve"
+          viewBox="-598.5 971.5 50 50"
+        >
+          <g id="Icon_3_">
+            <circle fill="#D52B1E" cx="-573.5" cy="996.5" r="25"></circle>
+            <path
+              fill="#ffffff"
+              d="M-579.1,1005.7c-2.8-2-5.6-4.2-8.2-6.6c-1,2.2-1.8,4.4-2.6,6.6c4.2,3.6,9.8,7.6,13.8,10   c5-13,12.8-21.4,20.4-27.4c-1-2-2.2-3.8-3.8-5.4C-567.7,988.9-574.3,996.7-579.1,1005.7z"
+            ></path>
+          </g>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 16 20"
+          id="white-lock"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 0C10.7956 0 12.8929 2.18417 12.996 5.26154L13 5.5V7H14C15.1046 7 16 7.89543 16 9V18C16 19.1046 15.1046 20 14 20H2C0.89543 20 0 19.1046 0 18V9C0 7.89543 0.89543 7 2 7H3V5.5C3 2.29761 5.13272 0 8 0ZM14 9H2V18H14V9ZM8 11C9.10457 11 10 11.8954 10 13C10 13.7398 9.59828 14.3858 9.00108 14.7318L9 15.2C9 15.6418 8.55228 16 8 16C7.48716 16 7.06449 15.6912 7.00673 15.2933L7 15.2L6.99993 14.7324C6.40217 14.3866 6 13.7403 6 13C6 11.8954 6.89543 11 8 11ZM8 2C6.33153 2 5.08826 3.27741 5.0045 5.28242L5 5.5V7H11V5.5C11 3.37028 9.72806 2 8 2Z"
+            fill="#ffffff"
+          ></path>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          id="mint"
+        >
+          <g fill="none" fill-rule="nonzero">
+            <circle cx="10" cy="10" r="10" fill="#00A6A4"></circle>
+            <path
+              fill="#FFF"
+              d="M10 2.777c-.658.66-5.174 5.309-5.174 8.93 0 2.578 2.055 3.432 5.174 5.554 3.12-2.122 5.174-2.976 5.174-5.554 0-3.621-4.515-8.27-5.174-8.93zm0 12.748l-.607-.397c-2.32-1.511-3.123-2.101-3.123-3.421 0-2.044 2.028-4.888 3.73-6.816v10.634z"
+            ></path>
+          </g>
+        </symbol>
+        <symbol
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="quick-books"
+          x="0px"
+          y="0px"
+          xml:space="preserve"
+          viewBox="-598.5 971.5 50 50"
+        >
+          <g id="Icon_2_">
+            <circle
+              id="Circle_2_"
+              fill="#2CA01C"
+              cx="-573.5"
+              cy="996.5"
+              r="25"
+            ></circle>
+            <path
+              fill="#FFFFFF"
+              d="M-591.5,996.5c0,5.4,4.4,9.8,9.8,9.8h1.4v-3.6h-1.4c-3.4,0-6.2-2.8-6.2-6.2s2.8-6.2,6.2-6.2h3.4   c0,0,0,18.6,0,18.8c0,2,1.6,3.6,3.6,3.6v-26.2c0,0-3.8,0-7,0C-587.3,986.7-591.5,991.1-591.5,996.5z M-565.1,986.7h-1.4v3.6h1.4   c3.4,0,6.2,2.8,6.2,6.2s-2.8,6.2-6.2,6.2h-3.4c0,0,0-18.6,0-18.8c0-2-1.6-3.6-3.6-3.6v26.2c0,0,3.8,0,7,0c5.4,0,9.8-4.4,9.8-9.8   C-555.5,991.1-559.7,986.7-565.1,986.7z"
+            ></path>
+          </g>
+        </symbol>
+      </svg>
+    </div>
+    <main>
+      <section class="container">
+        <form class="form">
+          <div class="form__main">
+            <h1 class="title">Create an Intuit account</h1>
 
-    <main class="create-account text-center">
-      <div class="create-account__header">
-        <h1 class="create-account__title title--md">
-          Create an Intuit account
-        </h1>
-        <p class="create-account__description text--md">
-          One account for everything Intuit, including Mint.
-        </p>
-        <a class="create-account__link text--sm" href="#none">Learn more</a>
-      </div>
+            <p class="intro">
+              One account for everything Intuit, including Mint.
+              <a href="#">Learn more</a>
+              <br />
+              Already have an account? <a href="#">Sign In</a>
+            </p>
 
-      <form>
-        <label class="create-account__input-title text--md" for="email">
-          Email address
-        </label>
-        <input
-          class="create-account__input"
-          type="email"
-          name="email"
-          title="You'll use this as your user ID"
-        />
+            <label for="email">Email</label>
+            <div class="input__wrapper">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" "
+                required
+              />
+              <span class="tooltip">You'll use this as your user ID</span>
+            </div>
 
-        <span class="create-account__hidden-text"></span>
+            <label for="phone">Phone (recommended)</label>
+            <div class="input__wrapper">
+              <input
+                class="has-icon"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder=" "
+              />
+              <!-- <span class="input-warning-icon"></span> -->
+              <span class="tooltip">
+                We strongly recommend adding a phone number. This will help
+                verify your account and keep it safe.
+              </span>
+              <span class="input-info-text">
+                Standard call, message, or data rates may apply.
+              </span>
+            </div>
 
-        <label class="create-account__input-title text--md" for="phone">
-          Phone (recommended)
-        </label>
-        <input class="create-account__input" type="phone" name="phone" />
+            <label for="password">Password</label>
+            <div class="input__wrapper">
+              <input
+                placeholder=" "
+                type="password"
+                name="password"
+                id="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                required
+              />
+              <span class="tooltip">
+                Create a password you've never used before. This will help keep
+                your account safe.
+              </span>
+            </div>
 
-        <span class="create-account__hidden-text"></span>
+            <div aria-hidden="true" id="hidden-input-wrapper">
+              <label for="confirm-password">Confirm Password</label>
+              <div class="input__wrapper">
+                <input
+                  placeholder=" "
+                  type="password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                  name="confirm-password"
+                  id="confirm-password"
+                />
+              </div>
+            </div>
 
-        <label class="create-account__input-title text--md" for="password">
-          Password
-        </label>
-        <input class="create-account__input" type="text" name="password" />
+            <button type="button" class="submit-btn">
+              <svg class="icon" width="16" height="20" viewBox="0 0 16 20">
+                <use xlink:href="#white-lock"></use>
+              </svg>
+              <span> create account </span>
+            </button>
 
-        <span class="create-account__hidden-text"></span>
+            <p class="form__legal-text">
+              By selecting Create account, you agree to our
+              <a href="#">Terms</a> and <br />
+              have read and acknowledge our
+              <a href="#">
+                Global Privacy <br />
+                Statement</a
+              >.
+            </p>
+          </div>
 
-        <div class="create-account__button-container text--lg">
-          <button class="create-account__button" type="submit">
-            Create Account
-          </button>
-        </div>
-      </form>
-
-      <div class="create-account__terms">
-        <p class="text--sm">
-          <i>
-            By clicking Create account, you agree to our
-            <a class="create-account__link" href="#none">Terms</a>
-            and have read and acknowledge our
-            <a class="create-account__link" href="#none">Privacy Statement</a>
-            .
-          </i>
-        </p>
-      </div>
-
-      <div class="create-account__footer">
-        <p class="text--xs">
-          Invisible reCAPTCHA by
-          <a class="create-account__link" href="#none">Google Privacy Policy</a>
-          and
-          <a class="create-account__link" href="#none">Terms of Use</a>
-        </p>
-      </div>
+          <div class="form__footer">
+            <p class="form__footer-text">
+              Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Use</a>.
+            </p>
+          </div>
+        </form>
+      </section>
     </main>
 
-    <footer class="footer text-center">
-      <nav class="footer__nav">
-        <ul class="footer__list text--sm text-capitalize">
-          <li class="footer__list-item">
-            <a class="footer__nav-link" href="#none">Legal</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__nav-link" href="#none">Privacy</a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__nav-link" href="#none">Security</a>
-          </li>
+    <footer>
+      <div class="legal__text-wrapper">
+        <ul class="legal__list">
+          <li><a href="#">legal</a></li>
+          <li><a href="#">privacy</a></li>
+          <li><a href="#">security</a></li>
         </ul>
-      </nav>
-
-      <p class="footer__legal">
-        <small class="text--sm">
-          © 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
+        <p class="legal__text">
+          © 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
           TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+          <br />
           Terms and conditions, features, support, pricing, and service options
           subject to change without notice.
-        </small>
-      </p>
+        </p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

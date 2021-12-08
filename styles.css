@@ -1,0 +1,254 @@
+:root {
+  --background: #eceef1;
+  --blue-gradient: linear-gradient(to bottom, #167ccc 0%, #0077c5 100%);
+  --error: #eb3432;
+  --link: #0077c5;
+  --text: #404040;
+  --warning: #ea7f00;
+  --white: #fff;
+}
+
+/* GLOBALS */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 100%;
+  margin: 0;
+}
+
+.form a {
+  color: #0077c5;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+label {
+  color: #404040;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 6px;
+  /* margin-top: 25px; */
+}
+
+input {
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c1c5c8;
+  color: #000000;
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 20.8px;
+  outline: none;
+  padding: 3px 8px;
+  width: 100%;
+}
+input.has-icon {
+  padding: 3px 32px 3px 8px;
+}
+input:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px rgb(82 168 236 / 60%);
+}
+input:focus ~ .input-info-text {
+  display: block;
+  visibility: visible;
+}
+input:focus ~ .tooltip {
+  display: inline-block;
+  visibility: visible;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: #fd5653;
+}
+
+.input-info-text {
+  color: #444;
+  display: none;
+  font-size: 10px;
+  line-height: 15px;
+  padding: 5px 0;
+  visibility: hidden;
+}
+
+/* TOOLTIP */
+.tooltip {
+  background-color: #404040;
+  border-radius: 4px;
+  color: #ffffff;
+  display: inline-block;
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-left: 15px;
+  max-width: 210px;
+  padding: 10px 20px;
+  position: absolute;
+  visibility: hidden;
+  width: fit-content;
+}
+
+/* CONTAINER */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 380px;
+}
+
+.form {
+  background-color: var(--white);
+  border-radius: 2px;
+  border: 1px solid #c7c7c7;
+}
+.form__main {
+  padding: 30px;
+}
+
+.form__footer {
+  background-color: #eceef1;
+  padding: 16px;
+}
+
+.form__legal-text {
+  color: #757575;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.form__footer-text {
+  color: #8d9096;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.title {
+  color: #393a3d;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26.4px;
+  margin: 0;
+  text-align: center;
+}
+
+.intro {
+  color: #393a3d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16.8px;
+  margin: 0 11px;
+  padding-top: 20px;
+  text-align: center;
+}
+.intro a {
+  font-size: 14px;
+}
+
+.input__wrapper {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.input-warning-icon {
+  background-image: url("/images/caution.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+
+/* Submit button */
+.submit-btn {
+  align-items: center;
+  background-color: #0077c5;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 15.75px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 100%;
+  /* margin-top: 25px; */
+  padding: 10px 12px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+.submit-btn svg {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.submit-btn:active {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #167ccc 0%, #0077c5 100%);
+  color: rgba(255, 255, 255, 80%);
+}
+
+/* LEGAL */
+.legal__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.legal__list a {
+  color: #505050;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.legal__list a:hover {
+  text-decoration: underline;
+}
+.legal__text {
+  color: #505050;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  text-align: center;
+}
+.legal__text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 717px;
+  padding-top: 25px;
+}
+
+#hidden-input-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
